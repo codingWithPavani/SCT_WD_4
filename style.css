@@ -1,0 +1,124 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    color: black;
+    overflow: hidden;
+    background-repeat: no-repeat;
+background: linear-gradient(
+    blue,skyblue,violet,purple
+
+);
+
+}
+input{
+    outline: none;
+    border-color: #8052ec;
+}
+
+
+.container {
+    margin: 50px auto;
+    width: 500px;
+    border: 2px solid black;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0,0,0,0,3);
+}
+
+input {
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-style: none;
+    
+}
+
+
+
+.upper{
+    overflow: hidden;
+}
+
+.lower{
+    overflow-y: auto;
+    border: 2px solid black;
+}
+
+button {
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    
+}
+
+#addTask {
+    background-color: green;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: end;
+}
+
+li {
+    background:whitesmoke;
+    padding: 1px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2%;
+    
+}
+
+#taskList{
+    text-align: center;
+   
+}
+li{
+    border-radius: 90px;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.delete {
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-right: 20px;
+}
+.check{
+   height: 20px;
+  width: 20px;
+  cursor: pointer;
+  border: 2px solid #333;
+  border-radius: 4px;
+  position: relative;
+  margin-left: 20px;
+  margin-top: 11px;
+}  
+:checked{
+    padding: 0%;
+   
+}
+.lower{
+    list-style: none;
+  padding: 10px;
+  margin: 0;
+  border-radius: 10px;
+  height: 450px; /*Fixed height */
+  overflow-y: auto; /* Scrollbar appears if there are many laps */
+  margin-top: 20px;
+  
+}
